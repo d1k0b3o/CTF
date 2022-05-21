@@ -18,6 +18,17 @@
 ## LWE問題
 2005年にRegevさんが提唱した計算量的に求解困難な問題であり,秘密ベクトルに関するランダムな連立線形近似方程式から秘密ベクトルを復元する問題である.
 この問題は格子問題の１つである最近ベクトル問題(Shortest Vector Problem)に帰着させることでその困難性が証明されている.
+$$
+\begin{align}
+  14s_1+15s_2+5s_3+2s_4  &\equiv 8\pmod{17}\\
+  13s_1+14s_2+14s_3+6s_4 &\equiv 16\pmod{17}\\
+  6s_1+10s_2+13s_3+s_4   &\equiv 12\pmod{17}\\
+  10s_1+4s_2+12s_3+16s_4 &\equiv 12\pmod{17}\\
+  &\vdots\\
+  6s_1+7s_2+16s_3+2s_4   &\equiv 3\pmod{17}
+\end{align}
+$$
+
 ### Notation
 $q$ : 素数<br>
 $\mathcal{D}_{\mathbb{F}_q^n}$ : 平均0,標準偏差$\alpha$の正規分布  
