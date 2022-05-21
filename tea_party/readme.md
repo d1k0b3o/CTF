@@ -7,7 +7,7 @@
 ### NIST PQC Competition
 これを受けて米国標準技術研究所(NIST)が量子コンピュータにも耐性を有する耐量子計算機暗号(Post-Quantum Cryptography : PQC)の標準方式の公募を2016年に開始した。<br>
 第1ラウンドでは鍵カプセル化方式と署名方式で合計64の応募があった.現在は,第3ラウンドまで進んでおり、鍵カプセル化方式（KEMs/Encryption)ではKyber,NTRU,SABER,Classic McElieceの4方式,署名方式(Signatures)ではDilithium, Falcon, Rainbowの3方式まで候補が絞られている.
-| Base | Kems/Encryption | Signatures |
+| Base | PKE/KEMs | Signatures |
 | ------- | --------------- | ---------- |
 | Lattice-based | Kyber,NTRU,SABER | Dilithium, Falcon |
 | Code-based | Classic McEliece | |
