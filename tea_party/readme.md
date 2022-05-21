@@ -21,24 +21,35 @@
 
 $$
 \begin{align}
-  14s_1+15s_2+5s_3+2s_4  &\equiv 8\pmod{17}\\
-  13s_1+14s_2+14s_3+6s_4 &\equiv 16\pmod{17}\\
-  6s_1+10s_2+13s_3+s_4   &\equiv 12\pmod{17}\\
-  10s_1+4s_2+12s_3+16s_4 &\equiv 12\pmod{17}\\
-                         &\vdots            \\
-  6s_1+7s_2+16s_3+2s_4   &\equiv 3\pmod{17}
+  14s_1+15s_2+5s_3+2s_4  \equiv 8  &\pmod{17}\\
+  13s_1+14s_2+14s_3+6s_4 \equiv 16 &\pmod{17}\\
+  6s_1+10s_2+13s_3+s_4   \equiv 12 &\pmod{17}\\
+  10s_1+4s_2+12s_3+16s_4 \equiv 12 &\pmod{17}\\
+                         \vdots            \\
+  6s_1+7s_2+16s_3+2s_4   \equiv 3  &\pmod{17}
 \end{align}
 $$
 
 から秘密ベクトル$s=\{s_1,s_2,s_3,s_4\} \in \mathbb{F}_{17}^4$ を求める問題
 
-### Notation
-$q$ : 素数<br>
-$\mathcal{D}_{\mathbb{F}_q^n}$ : 平均0,標準偏差$\alpha$の正規分布  
-$s \in \mathbb{F}_q^n$ : $(n\times 1)$ の秘密ベクトル  
+これは下のように行列と秘密ベクトルに分解することができるが、
 
-$A \leftarrow \mathcal{D}_{\mathbb{F}_q^n,\alpha}$ : $(m\times 1)$の誤差ベクトル  
+
+### Notation
+$q\hspace{4pt}$ : 素数
+
+$\mathcal{D}_{\mathbb{F}_q^n}\hspace{4pt}$ : 平均0,標準偏差$\alpha$の正規分布  
+
+$s \hspace{4pt}\leftarrow \hspace{4pt} \mathbb{F}_q^n~$ : $(n\times 1)$ の秘密ベクトル  
+
+$e \hspace{4pt}\leftarrow \hspace{4pt} \mathcal{D}_{\mathbb{F}_q^m,\alpha}$ : $(m\times 1)$の誤差ベクトル  
+
+$A \hspace{4pt}\leftarrow \hspace{4pt} \mathcal{U}_{\mathbb{F}_q^{m\times n}}$ : 一様ランダムな$m\times n$行列
+
+$b \hspace{4pt}\leftarrow \hspace{4pt} \mathcal{D}_{\mathbb{F}_q^m,\alpha}$ : ランダムな$(m\times 1)$ベクトル
+
 ### 判定LWE(Decision-LWE)
+$(A,A\cdot s+e\pmod q)$と$(A,b)$が与えられた時,秘密ベクトル$s$から計算したペアなのか$\mathcal{D}_{\mathbb{F}_q^m,\alpha}$からランダムに選択したペアなのかを判定する問題
 
 ### 探索LWE(Search-LWE)
 $(A,A\cdot s+e\pmod q)$が与えられた時,$s$を求める問題
