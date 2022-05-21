@@ -85,7 +85,7 @@ tmp4 = (tmp2*tmp3)%p            # g^3r   * g^6r      = g^9r
 gr   = tmp1*pow(tmp4,-1,p)      # g^10r  * g^(-9r)   = g^r
 
 # Step2 Asciiの範囲(33-126)に対して(g^r)^m mod pを計算
-assert pow(gr,67,p)==cs[0]      # asciiの67(base10)は'C'
+assert pow(gr,67,p)==cs[0]      # asciiの67(base10)は'C'
 
 d = dict()
 for i in range(33,127):
