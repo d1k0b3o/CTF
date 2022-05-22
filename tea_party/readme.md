@@ -4,7 +4,7 @@
 近年,量子コンピュータの研究開発が盛んに行われており,大規模な量子コンピュータが実現するとショアのアルゴリズムによって素因数分解問題や楕円曲線上の離散対数問題が効率的に解けることが知られている.<br>
 素因数分解問題はRSA暗号、楕円曲線上の離散対数問題は楕円曲線暗号の安全性の根拠となる問題であるため、量子コンピュータの実現による公開鍵暗号の安全性の低下が懸念されている.
 
-### NIST PQC Competition
+### NIST PQC Standardization
 これを受けて米国標準技術研究所(NIST)が量子コンピュータにも耐性を有する耐量子計算機暗号(Post-Quantum Cryptography : PQC)の標準方式の公募を2016年に開始した。<br>
 第1ラウンドでは鍵カプセル化方式と署名方式で合計64の応募があった.現在は,第3ラウンドまで進んでおり、鍵カプセル化方式（KEMs/Encryption)ではKyber,NTRU,SABER,Classic McElieceの4方式,署名方式(Signatures)ではDilithium, Falcon, Rainbowの3方式まで候補が絞られている.
 | Type | PKE/KEMs | Signatures |
